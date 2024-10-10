@@ -1,0 +1,85 @@
+{
+  "name": "shell",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/react/with-remotes/shell/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/react/with-remotes/shell",
+        "index": "apps/react/with-remotes/shell/src/index.html",
+        "baseHref": "/",
+        "main": "apps/react/with-remotes/shell/src/main.ts",
+        "tsConfig": "apps/react/with-remotes/shell/tsconfig.app.json",
+        "assets": [
+          "apps/react/with-remotes/shell/src/favicon.ico",
+          "apps/react/with-remotes/shell/src/assets"
+        ],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "apps/react/with-remotes/shell/webpack.config.ts"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/react/with-remotes/shell/src/environments/environment.ts",
+              "with": "apps/react/with-remotes/shell/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "webpackConfig": "apps/react/with-remotes/shell/webpack.config.prod.ts"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/react:module-federation-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "shell:build",
+        "hmr": true,
+        "port": 4200
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "shell:build:development"
+        },
+        "production": {
+          "buildTarget": "shell:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/react:module-federation-static-server",
+      "defaultConfiguration": "production",
+      "options": {
+        "serveTarget": "shell:serve"
+      },
+      "configurations": {
+        "development": {
+          "serveTarget": "shell:serve:development"
+        },
+        "production": {
+          "serveTarget": "shell:serve:production"
+        }
+      }
+    }
+  }
+}
