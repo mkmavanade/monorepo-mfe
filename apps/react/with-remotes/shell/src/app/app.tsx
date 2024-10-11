@@ -1,12 +1,13 @@
 import * as React from 'react';
 
+import { Link, Route, Routes } from 'react-router-dom';
+
 import { HeaderComponent } from 'remote1/Module';
 import NxWelcome from './nx-welcome';
 import Blogs from '../pages/blogs';
 import { NavbarComponent } from 'remote1/Module';
 import { FooterComponent } from 'remote1/Module';
 
-import { Link, Route, Routes } from 'react-router-dom';
 
 const Remote1 = React.lazy(() => import('remote1/Module'));
 
