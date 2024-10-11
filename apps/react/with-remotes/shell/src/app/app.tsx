@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import NxWelcome from './nx-welcome';
-
+const HeaderComponent = require('../../../remote1/src/components/Header')
 import { Link, Route, Routes } from 'react-router-dom';
 
 const Remote1 = React.lazy(() => import('remote1/Module'));
@@ -24,6 +24,7 @@ export function App() {
           <Link to="/remote2">Remote2</Link>
         </li>
       </ul>
+<HeaderComponent title='Teste' />
       <Routes>
         <Route path="/" element={<NxWelcome title="shell" />} />
 
