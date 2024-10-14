@@ -1,3 +1,41 @@
+# POC Monorepo + Micro Frontend
+
+## ✨ Tecnologias ✨ ##
+- Monorepo
+- Micro Frontend
+- Styled Component
+- Axios
+- React DOM
+- Module Federation
+
+## ✨ Start ✨ ##
+Clone o projeto
+```sh
+git clone https://github.com/mkmavanade/monorepo-mfe.git
+```
+
+Entre na pasta do projeto.
+
+Ajuste o ESlint
+```sh
+npm install eslint@^8 --save-dev
+```
+
+E para rodar o projeto geral:
+```sh
+npx nx serve shell
+```
+
+Para rodar somente o módulo Remote 1:
+```sh
+npx nx serve remote1
+```
+
+Ou para rodar somente o módulo Remote 2:
+```sh
+npx nx serve remote2
+```
+
 # NxMaster
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
