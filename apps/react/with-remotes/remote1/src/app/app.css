@@ -1,0 +1,121 @@
+:root {
+  --color-primary: #FF7500;
+  --color-primary-light: #FFE3CC;
+  --color-primary-light2: #FF9A44;
+  --color-primary-medium: #BB5600;
+  --color-primary-dark: #773700;
+
+  --color-secondary: #4E008E;
+  --color-secondary-light: #F2E3FF;
+  --color-secondary-light1: #D49FFF;
+  --color-secondary-light2: #8600F4;
+  --color-secondary-medium: #32005B;
+  --color-secondary-dark: #160028;
+
+  --color-suport-fragility: #FF505F;
+  --color-suport-fragility-light: #FF949D;
+  --color-suport-fragility-medium: #FF0C21;
+
+  --color-suport-focus: #BE82FF;
+  --color-suport-focus-light: #E1C6FF;
+  --color-suport-focus-medium: #9B3EFF;
+
+  --color-suport-force: #46B2FF;
+  --color-suport-focus-light: #8ACEFF;
+  --color-suport-focus-medium: #0296FF;
+
+  --color-alert: #FFC82C;
+  --color-alert-light: #FFE7A2;
+  --color-alert-light1: #FFDD63;
+  --color-alert-medium: #F8B700;
+  --color-alert-dark: #C79800;
+
+  --color-warning: #FF4133;
+  --color-warning-light: #FFD4D1;
+  --color-warning-light1: #FFADA8;
+  --color-warning-medium: #DE3023;
+  --color-warning-dark: #C40008;
+
+  --color-sucess: #13CE66;
+  --color-sucess-light: #AEFFD3;
+  --color-sucess-light1: #63FF95;
+  --color-sucess-medium: #0F9F4F;
+  --color-sucess-dark: #078636;
+
+  --color-neutral-low: #1E1E1E;
+  --color-neutral-low1: #787878;
+  --color-neutral-low2: #BBBBBB;
+
+  --color-neutral-high: #FFFFFF;
+  --color-neutral-high1: #F5F5F5;
+  --color-neutral-high2: #E0E0E0;
+
+  --font-heading-xxl-desktop: 4rem;
+  --font-heading-xl-desktop: 3rem;
+  --font-heading-lg-desktop: 2.5rem;
+  --font-heading-md-desktop: 2rem;
+  --font-heading-sm-desktop: 1.5rem;
+  --font-heading-xs-desktop: 1.25rem;
+
+  --font-subtitle-lg-desktop: 2rem;
+  --font-subtitle-md-desktop: 1.5rem;
+  
+  --font-heading-xxl-mobile: 3rem;
+  --font-heading-xl-mobile: 2.5rem;
+  --font-heading-lg-mobile: 2rem;
+  --font-heading-md-mobile: 1.5rem;
+  --font-heading-sm-mobile: 1.25rem;
+  --font-heading-xs-mobile: 1rem;
+
+  --font-subtitle-lg-mobile: 1.5rem;
+  --font-subtitle-md-desktop: 1.25rem;
+
+  --font-body-lg: 1rem;
+  --font-body-sm: 0.875rem;
+
+  --font-button: 0.875rem;
+
+  --font-caption: 0.75rem;
+  --font-overline: 0.625rem;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  --border-width-hairline: 1px;
+  --border-width-thin: 2px;
+  --border-width-thick: 3px;
+  --border-width-heavy: 4px;
+
+  --line-height-default: 100%;
+  --line-height-xs: 116%;
+  --line-height-sm: 124%;
+  --line-height-md: 132%;
+  --line-height-lg: 156%;
+  --line-height-xl: 180%;
+
+  --spacing-quark: 4px;
+  --spacing-nano: 8px;
+  --spacing-xxxs: 16px;
+  --spacing-xxs: 24px;
+  --spacing-xs: 32px;
+  --spacing-sm: 40px;
+  --spacing-md: 48px;
+  --spacing-lg: 56px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 80px;
+  --spacing-xxxl: 120px;
+  --spacing-huge: 160px;
+  --spacing-giant: 200px;
+
+  --padding-quark: 4px;
+  --padding-nano: 8px;
+  --spacing-xs: 16px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 40px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

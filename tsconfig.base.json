@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-master/lib": ["lib/src/index.ts"],
       "remote1/Module": ["apps/react/with-remotes/remote1/src/remote-entry.ts"],
       "remote2/Module": ["apps/react/with-remotes/remote2/src/remote-entry.ts"]
     }
