@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ButtonStyled = styled.button`
+  background-color: var(--color-secondary);
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -10,6 +11,7 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   border-radius: var(--border-radius-md);
   font-size: var(--font-button);
+  color: var(--color-neutral-high);
 
   &.success {
     background-color: var(--color-suport-focus-medium);
